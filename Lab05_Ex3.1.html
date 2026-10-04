@@ -42,6 +42,30 @@
             margin: 0 auto;
             max-width: 680px;
         }
+        .personal-info {
+            background-color: #f9fbf9;
+            border: 1px solid #c8e6c9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 35px;
+        }
+        .personal-info h2 {
+            font-size: 1.3em;
+            color: #2e7d32;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        .personal-info ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+            line-height: 1.8;
+            font-size: 1em;
+            color: #2d3748;
+        }
+        .personal-info ul li strong {
+            color: #388e3c;
+        }
         .media-section {
             margin-bottom: 35px;
         }
@@ -59,6 +83,19 @@
             border-radius: 10px;
             box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
             border: 1px solid #e0e0e0;
+        }
+        .pdf-container {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e0e0e0;
+        }
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
         .video-container {
             position: relative;
@@ -99,7 +136,7 @@
 <body>
 
     <div class="container">
-       
+        
         <div class="header-section">
             <h1>Lợi Ích Của Công Nghệ Số Trong Học Tập</h1>
             <p class="description">
@@ -107,45 +144,71 @@
             </p>
         </div>
 
-        
+        <!-- Phần Thông Tin Cá Nhân -->
+        <div class="personal-info">
+            <h2>Thông Tin Cá Nhân</h2>
+            <ul>
+                <li><strong>Họ và Tên:</strong> Đào Trí Cần</li>
+                <li><strong>Ngày sinh:</strong> 27/02/2008</li>
+                <li><strong>Khóa / Ngành:</strong> K52 - Truyền Thông Đa Phương Tiện, Đại Học Cần Thơ</li>
+                <li><strong>MSSV:</strong> B2605333</li>
+                <li><strong>Lớp học phần:</strong> CT005D04</li>
+                <li><strong>Món ăn yêu thích:</strong> Gỏi cuốn, bún riêu, nước lọc và các loại trái cây có múi</li>
+            </ul>
+        </div>
+
+        <!-- Sản phẩm 1: File PDF -->
         <div class="media-section">
-            <h2>1. Infographic Lợi Ích Của Công Nghệ Số</h2>
+            <h2>1. Tài Liệu PDF Giới Thiệu</h2>
+            <div class="pdf-container">
+                <iframe src="Lab05_Ex1.2.pdf" title="Tài liệu PDF Lab05"></iframe>
+            </div>
+            <p>
+                Nếu file PDF không hiển thị trực tiếp, 
+                <a href="Lab05_Ex1.2.pdf" target="_blank" rel="noopener noreferrer">
+                    bấm vào đây để tải hoặc xem PDF
+                </a>.
+            </p>
+        </div>
+
+        <!-- Sản phẩm 2: Infographic (Giữ nguyên) -->
+        <div class="media-section">
+            <h2>2. Infographic Lợi Ích Của Công Nghệ Số</h2>
             <img src="Lab05_Ex2.1.png" alt="Infographic Lợi ích công nghệ số" class="infographic">
             <div class="copyright-note">
                 <strong>Ghi chú bản quyền:</strong> Infographic tạo bởi Canva AI, hình ảnh từ Unsplash (Unsplash license).
             </div>
         </div>
 
-       
-       <div class="media-section">
-    <h2>2. Video Giới Thiệu Đa Phương Tiện</h2>
+        <!-- Sản phẩm 3: Video YouTube (Giữ nguyên) -->
+        <div class="media-section">
+            <h2>3. Video Giới Thiệu Đa Phương Tiện</h2>
 
-    <div class="video-container">
-        <iframe
-            src="https://www.youtube.com/embed/5GZUV3hLrkk"
-            title="Video giới thiệu đa phương tiện"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
-    </div>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/5GZUV3hLrkk"
+                    title="Video giới thiệu đa phương tiện"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
 
-    <p>
-        Nếu video không phát trực tiếp trên trang,
-        <a href="https://youtu.be/5GZUV3hLrkk"
-           target="_blank"
-           rel="noopener noreferrer">
-            mở video trên YouTube
-        </a>.
-    </p>
+            <p>
+                Nếu video không phát trực tiếp trên trang,
+                <a href="https://youtu.be/5GZUV3hLrkk"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    mở video trên YouTube
+                </a>.
+            </p>
 
-    <div class="copyright-note">
-        <strong>Ghi chú bản quyền:</strong> Video tạo bởi CapCut, tài liệu từ Pexels/FreeSound (CC0).
-    </div>
-</div>
+            <div class="copyright-note">
+                <strong>Ghi chú bản quyền:</strong> Video tạo bởi CapCut, tài liệu từ Pexels/FreeSound (CC0).
+            </div>
+        </div>
 
-       
         <footer>
             <p>Bài thực hành Lab05 - Tạo và quản lý mã nguồn HTML với GitHub Copilot</p>
         </footer>
